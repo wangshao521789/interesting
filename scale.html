@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tran {
+            position: relative;
+          
+        }
+        .tran::before {
+            content: "";
+            position: absolute;
+            border: 1px solid #d6e4ed;
+            box-sizing: border-box;
+            width: 200%;
+            height: 200%;
+            transform-origin: 0;
+            transform: scaleY(0.5);
+
+        }
+        .re {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <p>0.5px</p>
+    <div class="tran"></div>
+    <p>1px</p>
+    <div class="re"></div>
+</body>
+</html>
